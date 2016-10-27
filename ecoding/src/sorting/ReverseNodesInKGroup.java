@@ -2,10 +2,7 @@ package sorting;
 
 import java.util.LinkedList;
 
-import org.w3c.dom.NodeList;
-
 public class ReverseNodesInKGroup {
-	    @SuppressWarnings("unchecked")
 		public static ListNode reverseKGroup(ListNode head, int k) {
 	    	if(head==null||head.next==null||k<2){
 	    		return head;
@@ -43,6 +40,7 @@ public class ReverseNodesInKGroup {
 			b = b.next;
 		}
 		ListNode c = ReverseNodesInKGroup.reverseKGroup(a, 3);
+		System.out.print(c);;
 	}
 
 }

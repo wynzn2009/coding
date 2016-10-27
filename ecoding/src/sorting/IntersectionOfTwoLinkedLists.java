@@ -4,8 +4,8 @@ import java.util.LinkedList;
 
 public class IntersectionOfTwoLinkedLists {
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        LinkedList a = new LinkedList();
-        LinkedList v = new LinkedList();
+        LinkedList<ListNode> a = new LinkedList<ListNode>();
+        LinkedList<ListNode> v = new LinkedList<ListNode>();
         while(headA!=null){
         	a.push(headA);
         	headA = headA.next;
